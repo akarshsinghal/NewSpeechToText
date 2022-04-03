@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <EditText
+            android:id="@+id/text"
+            android:layout_width="313dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="21dp"
+            android:layout_toLeftOf="@id/button"
+            android:hint="Hit the mic!"
+            android:padding="15dp" />
+
+        <ImageView
+            android:id="@+id/button"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="19dp"
+            android:backgroundTint="#F9F8FA"
+            android:paddingRight="9dp"
+            android:src="@drawable/ic_mic_black_off" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="207dp"
+            android:text="   Welcome to the Speech to Text Translator"
+            android:textColor="#1539BA"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="160dp"
+            android:layout_height="159dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="118dp"
+            android:backgroundTint="#F9F8FA"
+            android:paddingRight="9dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="600dp"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="#F9F8FA"
+            android:paddingRight="9dp"
+            ads:adUnitId="YOUR_AD_UNIT_ID"
+            ads:adSize="BANNER"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
